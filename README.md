@@ -19,7 +19,7 @@ location with exported targets.
 extremely lightweight, right? Well, not really. 
 
 - Eager initialization of interfaces. By pre-definining which interfaces will be
-used, we get rid of a bunch of thread synchronization, and null-checking.
+used, we get rid of a bunch of thread synchronization and null-checking.
 
 - Lighter footprint. Of particular concern is bringing in a complete json 
 library for marginal usage (The current implementation still does, but I plan on 
