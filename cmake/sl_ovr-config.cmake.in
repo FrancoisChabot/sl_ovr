@@ -1,0 +1,3 @@
+get_filename_component(SL_OVR_CMAKE_DIR "${CMAKE_CURRENT_LIST_FILE}" PATH)
+
+include("${SL_OVR_CMAKE_DIR}/sl_ovrTargets.cmake")
