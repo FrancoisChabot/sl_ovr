@@ -1,6 +1,6 @@
 # sl_ovr
 
-A simple reimplementation of Valve's OpenVR
+A simple reimplementation of Valve's OpenVR loader
 
 ## Why?!?
 
