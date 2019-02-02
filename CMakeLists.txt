@@ -54,4 +54,8 @@ install(EXPORT sl_ovrTargets DESTINATION lib/cmake/sl_ovr)
 configure_file(cmake/sl_ovr-config.cmake.in
   "${PROJECT_BINARY_DIR}/sl_ovr-config.cmake" @ONLY)
 
+#install headers
+install(DIRECTORY include/sl_ovr DESTINATION include)
+
+
 add_subdirectory(examples)
