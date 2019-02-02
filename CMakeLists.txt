@@ -57,5 +57,8 @@ configure_file(cmake/sl_ovr-config.cmake.in
 #install headers
 install(DIRECTORY include/sl_ovr DESTINATION include)
 
+install(FILES
+  "${PROJECT_BINARY_DIR}/sl_ovr-config.cmake"
+  DESTINATION lib/cmake/sl_ovr)
 
 add_subdirectory(examples)
