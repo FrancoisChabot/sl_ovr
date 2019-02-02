@@ -5,7 +5,7 @@ A simple reimplementation of Valve's OpenVR loader
 ## Why?!?
 
 The openvr api library has gotten to me through death by a million cuts. Also, 
-I like a good excersie in API design.
+I like a good excercise in API design.
 
 ## What's different from Valve's?
 
