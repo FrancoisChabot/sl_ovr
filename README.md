@@ -1,12 +1,11 @@
 # sl_ovr
 
-A simple reimplementation of Valve's OpenVR
+A simple reimplementation of Valve's OpenVR loader
 
 ## Why?!?
 
-The openvr api library has gotten to me through death by a million cuts. At this 
-point, the version i'm using has been frankensteined to the point where just 
-rewriting it makes more sense.
+The openvr api library has gotten to me through death by a million cuts. Also, 
+I like a good excersie in API design.
 
 ## What's different from Valve's?
 
@@ -19,7 +18,7 @@ location with exported targets.
 extremely lightweight, right? Well, not really. 
 
 - Eager initialization of interfaces. By pre-definining which interfaces will be
-used, we get rid of a bunch of thread synchronization, and null-checking.
+used, we get rid of a bunch of thread synchronization and null-checking.
 
 - Lighter footprint. Of particular concern is bringing in a complete json 
 library for marginal usage (The current implementation still does, but I plan on 
