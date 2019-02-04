@@ -67,6 +67,11 @@ class OVR_system : public OVR_system_base {
         this->get_interface(detail::IFace_info<Ifaces_t>::version()))...);
   }
 
+  template<typename T>
+  operator T*() const {
+    return this->get<T>();
+  }
+
   template <typename Iface_t>
   Iface_t* get() const {
     return std::get<Iface_t*>(ifaces);
