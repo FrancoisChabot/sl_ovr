@@ -38,7 +38,7 @@ and back-port all existing titles.
 ## Usage
 
 ```
-slt::OVR_context ovr_ctx;
+slt::OVR_context ovr_ctx("path/to/vr_client.dll");
 
 if(ovr_ctx.is_hmd_present()) {
   slt::OVR_system<vr::IVRSystem> sl_vr_system(ovr_ctx, vr::VRApplication_Scene);
